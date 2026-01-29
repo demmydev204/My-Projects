@@ -338,8 +338,9 @@ img {
   font-family: var(--HEADING-FF);
   font-weight: 400;
   padding: 1.5rem;
-  font-size: 2rem;
+  font-size: 3rem;
   letter-spacing: 3px;
+  padding-bottom: 1em;
 }
 
 #portfolio-intro .portfolio-content h3 {
@@ -543,7 +544,7 @@ img {
   width: 100%;
   min-height: 100vh;
   overflow: hidden;
-  margin-top: -1em;
+  margin-top: 3em;
 }
 
 #contact .container video {
@@ -1172,7 +1173,7 @@ img {
 
 /* About Hero Section */
 #about-hero {
-  background-image: url(/photograph-website/images/Hero\ About.jpg);
+  background-image: url(/images/Hero\ About.jpg);
   background-size: cover;
   background-position: top center;
   position: relative;
@@ -1253,7 +1254,7 @@ img {
 #meet-me .founder-content p {
   font-family: var(--PARAGRAPH-FF);
   text-align: left;
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-left: 1rem;
   padding: 2rem;
   line-height: 1.5;
@@ -1274,7 +1275,7 @@ img {
 
 /* Pictures Section */
 #pictures {
-  background-image: url(/photograph-website/images/wedding\ staircase.jpg);
+  background-image: url(/images/wedding\ staircase.jpg);
   background-size: cover;
   background-position: top center;
   width: 100%;
@@ -1319,7 +1320,7 @@ img {
 
 #team .team-member p {
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-family: var(--PARAGRAPH-FF);
   font-weight: lighter;
   padding-top: 0.5em;
@@ -1390,7 +1391,7 @@ img {
 /* Media Queries For Desktop */
 @media only screen and (min-width: 1024px) {
   #contact .container {
-    margin-top: -5em;
+    margin-top: 6em;
   }
 
   /* Faq Section */
@@ -1436,30 +1437,40 @@ img {
 
   #portfolio-intro .portfolio-content {
     text-align: center;
-    margin-top: -7em;
+    margin-top: 7em;
   }
+
+#portfolio-intro .swiper-slide img {
+  padding-bottom: 2em;
+}
 
   /* Team Section */
 
   #team .team-list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+gap: 60px 40px;
+justify-items: center;
+margin: 0 auto;
   }
 
   #team .team-member {
     padding: 2em;
+    position: relative;
+    text-align: center;
   }
 
   #team .team-member img {
     padding-left: 0.5em;
     border-radius: 20px;
-    width: 70%;
+    width: 100%;
+    height: auto;
+    display: block;
   }
 
   #team .team {
     margin-top: -30em;
+    margin-bottom: 5em;
   }
   /* End of Team Section */
 
