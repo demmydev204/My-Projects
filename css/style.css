@@ -1529,3 +1529,199 @@ margin: 0 auto;
 /* End of Media Queries For Desktop */
 
 /* End of About Page */
+
+/* Portfolio Page */
+
+/* Portfolio-Hero Secton */
+#port-hero {
+  background-image: url(/images/port\ hero\ image.jpg);
+  background-size: cover;
+  background-position: top center;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 2rem;
+}
+
+#port-hero::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  background-color: black;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+#port-hero .hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#port-hero .hero-content {
+  text-align: center;
+  width: 80%;
+}
+
+#port-hero .hero-content h1 {
+  color: white;
+  width: 70%;
+  margin: 0 auto;
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1;
+  padding-bottom: 3rem;
+}
+
+#port-hero .hero-content h2 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  font-family: var(--PARAGRAPH-FF);
+  font-weight: 300;
+}
+/* End of Portfolio-Hero Secton */
+
+/* Gallery Section */
+
+#gallery .gallery {
+  background-color: rgb(206, 202, 202);
+  margin-top: 10em;
+}
+
+#gallery .gallery-content {
+  text-align: center;
+  padding: 5em;
+}
+
+#gallery .gallery-content h2 {
+  font-size: 3rem;
+  font-weight: 300;
+  letter-spacing: .2rem;
+  font-family: var(--HEADING-FF);
+padding-top: 2em;
+}
+
+#gallery .gallery-content h2 span {
+  font-style: italic;
+}
+
+#gallery .gallery-content p {
+  font-size: 1.5rem;
+  width: 70%;
+  line-height: 1.5;
+  margin: 0 auto;
+  padding-top: 1em;
+  padding-bottom: 3em;
+  font-family: var(--PARAGRAPH-FF);
+  font-weight: 300;
+}
+
+#gallery .gallerys img {
+  margin-top: 3em;
+}
+
+#gallery .gallerys h3 {
+  font-family: var(--SUBHEADING-FF);
+  font-size: 2rem;
+  text-align: left;
+  font-weight: 300;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  width: 80%;
+}
+
+#gallery .gallerys a {
+      text-decoration: none;
+      border-bottom: 2px solid black;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 1.5;
+    font-family: var(--HEADING-FF);
+    font-size: 1.5rem;
+    text-align: left;
+    margin-left: -7em;
+}
+
+#gallery .gallerys a:hover {
+  color: green;
+}
+/* End of Gallery Section */
+
+/* Offer Section */
+
+#portoffer .intro-image img {
+  height: 700px;
+  object-fit: cover;
+  width: 100%;
+}
+
+#portoffer .intro-content {
+  text-align: center;
+  margin-bottom: 10em;
+}
+
+#portoffer .intro-content h2 {
+  font-family: var(--HEADING-FF);
+  text-transform: uppercase;
+  padding: 2em;
+  font-weight: 400;
+}
+
+#portoffer .intro-content h3 {
+  font-family: var(--SUBHEADING-FF);
+  font-weight: 300;
+  font-size: 3rem;
+  width: 70%;
+  margin: 0 auto;
+  line-height: 1.2;
+  padding-bottom: 1.5em;
+}
+
+#portoffer .intro-content p {
+  font-family: var(--PARAGRAPH-FF);
+  font-weight: 300;
+  font-size: 2rem;
+  width: 70%;
+  margin: 0 auto;
+  color: grey;
+  padding-bottom: 1.5em;
+}
+
+#portoffer .intro-content p span {
+  font-style: italic;
+}
+
+#portoffer .intro-content a {
+        text-decoration: none;
+      border-bottom: 2px solid black;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 1.5;
+    font-family: var(--HEADING-FF);
+    font-size: 1.5rem;
+}
+#portoffer .intro-content a:hover {
+     color: lightgray;
+}
+/* End of Offer Section */
+
+/* Services Intro Action */
+#services-intro .intro-image {
+  display: flex;
+  column-gap: 20px;
+}
+
+#services-intro .intro-image img {
+  width: 50%;
+  overflow: hidden;
+}
+/* End of Services Intro Action */
+
+/* End of Portfolio Page */
