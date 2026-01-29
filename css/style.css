@@ -182,7 +182,7 @@ img {
 /* Hero Section */
 
 #hero {
-  background-image: url(/photograph-website/images/kissing-color.jpg);
+  background-image: url(/images/kissing-color.jpg);
   background-size: cover;
   background-position: top center;
   position: relative;
@@ -331,6 +331,7 @@ img {
 #portfolio-intro .portfolio-content {
   text-align: center;
   margin-top: 7em;
+  overflow: hidden;
 }
 
 #portfolio-intro .portfolio-content h2 {
@@ -351,21 +352,13 @@ img {
   padding-bottom: 1em;
 }
 
-#portfolio-intro .image-list {
-  width: 60%;
-  margin: 0 auto;
+#portfolio-intro .swiper {
+  width: 80%;
+  height: fit-content;
 }
 
-#portfolio-intro .image-list img {
+#portfolio-intro .swiper-slide img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  margin-bottom: 5em;
-  border-radius: 10%;
-}
-
-#portfolio-intro .image-list .addimg {
-  display: none;
 }
 
 #portfolio-intro .info p {
@@ -378,6 +371,7 @@ img {
   padding-bottom: 2em;
   font-weight: 400;
   letter-spacing: 3px;
+  padding-top: 2em;
 }
 
 #portfolio-intro .info a {
@@ -482,7 +476,7 @@ img {
 /* Testimonails Section */
 
 #testimonials {
-  margin-top: -2.2em;
+  margin-top: 4em;
 }
 
 #testimonials .testimonials-content {
@@ -549,7 +543,7 @@ img {
   width: 100%;
   min-height: 100vh;
   overflow: hidden;
-  margin-top: 7em;
+  margin-top: -1em;
 }
 
 #contact .container video {
@@ -676,7 +670,7 @@ img {
 
 #footer .footer-image img {
   width: 100%;
-  height: 300px;
+  height: 250px;
   object-fit: cover;
 }
 
@@ -863,19 +857,11 @@ img {
     margin-top: -300px;
   }
 
-  #portfolio-intro .image-list {
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-  }
-
-  #portfolio-intro .image-list img {
-    width: 70%;
-  }
-
-  #portfolio-intro .image-list .addimg {
-    display: block;
-  }
+  #portfolio-intro .swiper-slide img {
+  width: 100%;
+  display: flex;
+  height: 900px
+}
 
   #portfolio-intro .info p {
     font-family: var(--PARAGRAPH-FF);

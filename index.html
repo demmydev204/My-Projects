@@ -10,6 +10,10 @@
     />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+/>
     <title>Home</title>
   </head>
   <body>
@@ -103,13 +107,21 @@
           <div class="portfolio-content">
             <h2>The Portfolio</h2>
             <h3>Unforgettable Love Stories</h3>
-              <div class="image-list">
-                
-             <div>   <img src="images/car couples weeding.jpg" alt="cars" class="addimg"></div>
-             <div>
-                <img src="images/couples black and white.jpg" alt="image1"/></div>
-              <div>  <img src="images/beach-couples.jpg " alt="cars" class="addimg"></div>
-               </div>
+
+               <!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide"><img src="images/car couples weeding.jpg" alt="cars"></div>
+    <div class="swiper-slide"><img src="images/couples black and white.jpg" alt="couples"/></div>
+    <div class="swiper-slide"><img  id="slide-3" src="images/beach-couples.jpg " alt="beach-couples"></div>
+    ...
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+</div>
             
 
             <div class="info">
@@ -185,7 +197,7 @@
       <section id="contact">
         <div class="contact container">
           <video autoplay loop muted playsinline>
-            <source src="/photograph-website/videos/260919_small.mp4" type="video/mp4">
+            <source src="/videos/260919_small.mp4" type="video/mp4">
           </video>
           <div class="contact-info">
             <h2>Images as timeless as your love story
@@ -245,5 +257,24 @@
 </footer>
       <!--End of Footer Section-->
   <script src="js/app.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+  <script>
+    const swiper = new Swiper('.swiper', {
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+      loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+});
+  </script>
   </body>
 </html>
