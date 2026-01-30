@@ -1722,6 +1722,146 @@ padding-top: 2em;
   width: 50%;
   overflow: hidden;
 }
+
+#services-intro .intro-image:last-child {
+  display: none;
+}
+
+#contact .contact {
+  margin-top: -2em;
+}
 /* End of Services Intro Action */
+
+/* Media Queries for Desktop Portfolio */
+@media only screen and (min-width: 900px) {
+  
+
+/* Hero Section */
+#port-hero .hero-content h1 {
+  width: 25%;
+  padding-top: 3em;
+  font-size: 3rem;
+}
+/* End of Hero Section */
+
+/* Gallery Section */
+#gallery .gallery-list {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 2em;
+overflow: hidden;
+}
+
+#gallery .gallerys img {
+  width: 80%;
+  height: 500px;
+}
+
+#gallery .gallerys h3 {
+  padding-left: 1.5em;
+  font-size: 2rem;
+}
+
+
+#gallery .gallerys a {
+  margin-left: -4em;
+  border: none;
+  font-size: 1.5rem;
+}
+/* End of Gallery Section */
+
+/* Portoffer Section */
+#portoffer {
+  margin-top: -25em;
+  margin-bottom: 10em;
+}
+
+#portoffer .services-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#portoffer .services-content .intro-image {
+  width: 150%;
+}
+
+#portoffer .intro-image img {
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+}
+
+#portoffer .intro-content {
+  text-align: left;
+}
+
+#portoffer .intro-content h2 {
+  margin-top: 10em;
+  text-align: left;
+  margin-left: 1.5em;
+}
+
+#portoffer .intro-content h3 {
+font-size: 2.5rem;
+width: 60%;
+margin-left: 2em;
+}
+
+#portoffer .intro-content p {
+  font-size: 1.5rem;
+  margin-left: 3.5em;
+}
+
+#portoffer .intro-content a {
+  margin-left: 4em;
+}
+/* End of Portoffer Section */
+
+
+/* Services-intro Section */
+
+
+#services-intro .services-content {
+  margin-top: -15em;
+}
+
+#services-intro .intro-image img {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+#services-intro .intro-image .drink {
+  display: none;
+}
+
+#services-intro .intro-content h3 {
+  text-align: center;
+  padding-top: 7em;
+  margin: 0 auto;
+  width: 60%;
+}
+
+#services-intro .intro-content p {
+    text-align: center;
+  margin: 0 auto;
+font-size: 1rem;
+width: 90%;
+}
+
+#services-intro .intro-content a {
+  font-size: 1rem;
+  margin-left: 5.5em;
+}
+
+#contact .contact {
+  margin-top: -9.5em;
+}
+
+/* End of Services-intro Section */
+
+/* End of Media Queries for Desktop Portfolio */
+}
 
 /* End of Portfolio Page */
