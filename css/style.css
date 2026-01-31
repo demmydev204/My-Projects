@@ -260,7 +260,7 @@ img {
 #short-info .short-content p {
   font-family: var(--PARAGRAPH-FF);
   line-height: 1.5;
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
   font-weight: 400;
   font-size: 1.9rem;
@@ -271,6 +271,7 @@ img {
 /* Services Intro */
 #services-intro .services-content {
   text-align: center;
+  margin-bottom: 4em;
 }
 
 #services-intro .intro-image {
@@ -287,6 +288,17 @@ img {
   background-color: rgb(233, 220, 207);
   opacity: 0.6;
   padding-bottom: 10em;
+  margin-top: 0.1em;
+}
+
+#services-intro .intro-content h2 {
+    font-family: var(--HEADING-FF);
+  font-weight: 400;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  padding-top: 5em;
+  text-transform: uppercase;
 }
 
 #services-intro .intro-content h3 {
@@ -297,16 +309,16 @@ img {
   margin: 0 auto;
   line-height: 1.5;
   padding-bottom: 1em;
-  padding-top: 3em;
+/*   padding-top: 3em; */
 }
 
 #services-intro .intro-content p {
   font-family: var(--PARAGRAPH-FF);
   line-height: 1.5;
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
   font-weight: 400;
-  font-size: 2.1rem;
+  font-size: 1.9rem;
   padding-bottom: 2em;
 }
 
@@ -1719,8 +1731,22 @@ padding-top: 2em;
 }
 
 #services-intro .intro-image img {
-  width: 50%;
+  width: 100%;
   overflow: hidden;
+}
+
+#services-intro .intro-content p {
+  padding-top: -2em;
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: 300;
+  width: 90%;
+}
+
+#services-intro .intro-content h3 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  width: 50%;
 }
 
 #services-intro .intro-image:last-child {
@@ -1728,7 +1754,8 @@ padding-top: 2em;
 }
 
 #contact .contact {
-  margin-top: -2em;
+  margin-top: 7em;
+
 }
 /* End of Services Intro Action */
 
@@ -1841,6 +1868,7 @@ margin-left: 2em;
   padding-top: 7em;
   margin: 0 auto;
   width: 60%;
+
 }
 
 #services-intro .intro-content p {
@@ -1848,6 +1876,7 @@ margin-left: 2em;
   margin: 0 auto;
 font-size: 1rem;
 width: 90%;
+
 }
 
 #services-intro .intro-content a {
@@ -1865,3 +1894,213 @@ width: 90%;
 }
 
 /* End of Portfolio Page */
+
+/* Services Page */
+
+/* Hero Section */
+#services-hero {
+  background-image: url(/images/couples\ black\ and\ white.jpg);
+  background-size: cover;
+  background-position: top center;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 2rem;
+}
+
+#services-hero::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  background-color: black;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+#services-hero .hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#services-hero .hero-content {
+  text-align: center;
+  width: 80%;
+}
+
+#services-hero .hero-content h1 {
+  color: white;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 1.2px;
+  padding-bottom: 3rem;
+  padding-top: 5rem;
+}
+
+#services-hero .hero-content h2 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  font-family: var(--PARAGRAPH-FF);
+  font-weight: 300;
+}
+/* End of Hero Section */
+
+/* Process Section */ 
+
+#process {
+  margin-top: -5em;
+
+}
+#process .process {
+  flex-direction: column;
+  text-align: center;
+  background-color: lightgray;
+}
+
+#process .process-head {
+  margin-top: 6em;
+}
+#process .process-head h1 {
+  font-size: 3rem;
+  width: 68%;
+  margin: 0 auto;
+  font-weight: 300;
+  letter-spacing: 2px;
+  padding-bottom: 1em;
+}
+
+#process .process-head h1 span {
+  font-style: italic;
+}
+
+#process .process-item  {
+  padding: 2em;
+}
+
+#process .process-item h2 {
+  font-weight: 300;
+  padding: 1.5em;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  letter-spacing: 5px;
+}
+
+#process .process-item h3 {
+  padding-bottom: 1.5em;
+  font-style: italic;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
+#process .process-item p {
+  font-size: 1.7rem;
+  width: 80%;
+  letter-spacing: 1px;
+  margin: 0 auto;
+  font-weight: 400;
+}
+
+#process .process-content {
+  margin-bottom: 7em;
+}
+/* End of Process Section */ 
+
+/* Pictures Section */
+#bgpictures {
+  background-image: url(/images/bgpictures.jpg);
+  background-size: cover;
+  background-position: top center;
+  width: 100%;
+  height: 50vh;
+  border: 2px solid black;
+  margin-bottom: 10em;
+
+}
+/* End of Pictures Section */
+
+/* Media Queries For Services Desktop */
+@media only screen and (min-width: 900px) {
+#services-hero {
+  background-position: top center;
+
+}
+
+  #services-hero .hero-content h1 {
+  color: white;
+  width: 40%;
+  margin: 0 auto;
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 1.2px;
+  padding-bottom: 3rem;
+  padding-top: 5rem;
+}
+
+#services-hero .hero-content h2 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  font-family: var(--PARAGRAPH-FF);
+  font-weight: 300;
+}
+#services-intro {
+    margin: 5em;
+    margin-bottom: -5em;
+}
+
+#services-intro .services-content {
+  width: 80%;
+}
+#services-intro .intro-image {
+  width: 90%;
+}
+#services-intro .intro-content {
+  width: 90%;
+  background-color: transparent;
+  text-align: left;
+}
+
+#services-intro .intro-content h2 {
+  font-size: 1rem;
+}
+
+#services-intro .intro-content h3 {
+  text-align: left;
+margin-left: 1.2em;
+padding-top: 0;
+}
+
+#services-intro .intro-content p {
+  margin-left: 1.3em;
+  text-align: left;
+  padding-top: 0;
+  width: 70%;
+}
+
+#services-intro .intro-content a {
+  text-align: left;
+  margin-left: 1.2em;
+}
+
+#services-intro .intro-image:last-child {
+  display: block;
+}
+
+
+
+/* End of Media Queries For Services Desktop */
+
+
+/* End of Services Page */
