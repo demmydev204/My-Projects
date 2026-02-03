@@ -1300,7 +1300,7 @@ img {
 /* Team Section */
 
 #team .team-content {
-  background-color: rgb(233, 220, 207);
+  background-color: whitesmoke;
   padding: 3em;
 }
 
@@ -1481,7 +1481,7 @@ margin: 0 auto;
   }
 
   #team .team {
-    margin-top: -30em;
+    margin-top: -10em;
     margin-bottom: 5em;
   }
   /* End of Team Section */
@@ -1736,9 +1736,9 @@ padding: 2em;
 }
 
 #services-intro .intro-content h3 {
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  width: 50%;
+  font-size: 2rem;
+  text-transform: capitalize;
+  width: 60%;
   padding-top: 3em;
 
 }
@@ -1859,14 +1859,15 @@ margin-left: 2em;
   width: 100%;
   height: auto;
   overflow: hidden;
-  background-color: transparent;
+  background-color: rgb(233, 220, 207);
 }
 
 #services-intro .intro-content h3 {
   text-align: center;
   padding-top: 10em;
   margin: 0 auto;
-  width: 60%;
+  width: 80%;
+  text-transform: capitalize;
 
 }
 
@@ -2057,46 +2058,53 @@ width: 90%;
   font-weight: 300;
 }
 #services-intro {
-    margin: 5em;
+/*     margin: 5em; */
     margin-bottom: -5em;
-
+ 
 }
 
 #services-intro .services-content {
-  width: 80%;
+  width: 100%;
+  background-color: rgb(233, 220, 207);
 }
+
 #services-intro .intro-image {
   width: 90%;
   padding-bottom: 0;
-  background-color: transparent;
-  height: 100%;
+  min-height: 30vh;
 }
+#services-intro .intro-image img {
+  padding: 2em;
+
+}
+
 #services-intro .intro-content {
   width: 90%;
-  background-color: transparent;
+ padding: 2em; 
   text-align: left;
 }
 
 #services-intro .intro-content h3 {
   text-align: left;
-margin-left: 1em;
+margin-left: 0.6em;
 padding-top: 0;
-font-size: 1rem;
+font-size: 2rem;
+text-transform: capitalize;
+width: 50%;
 }
 
 #services-intro .intro-content p {
   margin-left: 1em;
   text-align: left;
-  padding-bottom: 0;
+  padding-bottom: 1.5em;
   font-size: 1.5rem;
-  line-height: 3;
-
-
+  line-height: 1.5;
+  width: 70%;
 }
 
 #services-intro .intro-content a {
   text-align: left;
-  margin-left: 1.2em;
+  margin-left: 1.5em;
 }
 
 #services-intro .intro-image:last-child {
@@ -2139,7 +2147,7 @@ font-size: 1rem;
 
 
 #contact .contact {
-  margin-top: 8em
+  margin-top: 0;
 }
 
 
@@ -2147,6 +2155,8 @@ font-size: 1rem;
 }
 
 /* End of Services Page */
+
+
 
 /* Blog Page */
 
@@ -2205,7 +2215,133 @@ font-size: 1rem;
   font-family: var(--PARAGRAPH-FF);
   font-weight: 300;
 }
-/* End of Hero Section */
-
 /* End of Blog Hero Section */ 
+
+/* Categories Section */
+
+#categories .categories {
+  min-height: 100vh;
+}
+
+#categories .category-content {
+  text-align: center;
+
+}
+
+#categories .category-content h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-style: italic;
+  font-weight: 400;
+  padding: 2em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+
+}
+
+#categories .category-line ul {
+  list-style-type: none;
+}
+
+#categories .category-line a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+line-height: 3;
+  color: black;
+  letter-spacing: 5px;
+    font-weight: 400;
+}
+
+#categories .category-line a:hover {
+  color: lightgray;
+}
+
+#categories .category-line input {
+  border: none;
+  font-size: 1.5rem;
+  border-bottom: 2px solid black;
+  padding-bottom: 1em;
+  margin-left: 1em;
+  margin-top: 2em;
+}
+
+#contact .contact {
+  margin-top: 5em;
+}
+/* End of Categories Section */
+
+/* Media Queries for Blog Desktop */
+@media only screen and (min-width: 900px) {
+  
+#blog-hero .hero-content h1 {
+  color: white;
+  width: 35%;
+  margin: 0 auto;
+  font-size: 2.7rem;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 1.2px;
+  padding-bottom: 3rem;
+  padding-top: 5rem;
+}
+
+#blog-hero .hero-content h2 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  font-family: var(--PARAGRAPH-FF);
+  font-weight: 300;
+}
+
+#categories .categories {
+  min-height: 50vh;
+  margin-top: -6em;
+}
+
+#categories .category-content {
+  display: flex;
+}
+
+#categories .category-line ul {
+  display: flex;
+align-items: flex-start;
+  column-gap: 20px;
+}
+
+
+#categories .category-line a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: black;
+  letter-spacing: 5px;
+    font-weight: 400;
+}
+
+
+#categories .category-line input {
+  border: none;
+  font-size: 1rem;
+  border-bottom: 2px solid black;
+  padding-bottom: 1em;
+  margin-left: 1em;
+  margin-top: -1em;
+}
+
+#categories .category-content h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-style: italic;
+  font-weight: 400;
+  padding: 2em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-top: -1em;
+}
+
+}
+/* End of Media Queries for Blog Desktop */
 /* End of Blog Page */
